@@ -228,7 +228,7 @@ typedef __int64          intmax_t;
 # if FMT_EXCEPTIONS
 #  define FMT_THROW(x) throw x
 # else
-#  define FMT_THROW(x) assert(false)
+#  define FMT_THROW(x) std::terminate()
 # endif
 #endif
 
